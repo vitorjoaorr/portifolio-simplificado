@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João Vitor - Dev FrontEnd</title>
+    <!--a tank <link> é um "buscador" de referencias externas-->
+    <!--o atributo "rel" indica a relação (que tipo de fonte) a tag link esta buscando (stylesheet, icon, prefetch, alternate)-->
+    <!--esta acessando a biblioteca externa de "awesome"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!--está acessando a biblioteca externa de "devicons"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+
+<body>
+    <header class="cabecalho"><!--não se usa ç ou acentuações, as class ajudam na leitura do codigo e no css-->
+        <a href="#"
+            target="_blank"><!--tag para criar links--><!--href especifica o destino de uma tag <a> <link> ou <base>-->
+            <h1 class="logo">JV</h1>
+        </a>
+
+        <nav class="menu">
+            <ul><!--tag para listas sem ordem definida, <ol> para lista com ordem-->
+                <li><!--apenas <li> pode esta dentro de uma <ul>ou<ol>-->
+                    <a href="#projetos">Meus Projetos</a> <!--scroll ate section "projetos"-->
+                </li>
+            </ul>
+        </nav><!-- tag para criar menus -->
+    </header>
+    <section class="home">
+        <div class="informacoes">
+            <h1>Olá! Sou João Vitor</h1>
+            <p>Sou um desenvolvedor frontend em formação apaixonado por tecnologia</p>
+            <p>Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de programação, além de
+                testar meus conhecimentos.😊 </p> <!--para criar emojis apertar "wind+."(ponto) alguns OS bugam-->
+            <p>Ah, também sou fã de jogos, filmes, séries e animes.</p>
+
+            <ul class="redes-sociais">
+                <li> <!--target _blanck para abrir link em nova aba-->
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-rodrigues-90a702122/"
+                        title="Ir para o linkedin" target="_blank">
+                        <i class="fab fa-linkedin-in"></i><!--tag de icone-->
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/5581900000000" title="Enviar Mensagem no WhatsApp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.github.com/nomedousuario" title="Ir para o GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" title="Ir para o Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-foto">
+            <div class="foto sombra-interna">
+                <img src="./src/image/eu-bg2.png" alt="foto do portfólio de João Vitor">
+                <!--em caso de erro de carregamento de imagem aparece esta mensagem ou para pessoas cegas-->
+            </div>
+        </div>
+    </section>
+    <section class="projetos" id="projetos">
+        <h2 class="titulo">Meus projetos</h2>
+
+        <div class="container-projetos">
+            <div class="projeto ativo">
+                <a href="#" target="_blank">
+                    <img src="./src/image/projeto-gta.png" alt="Projeto landing page GTA">
+                    <h3>Projeto 1</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#" target="_blank">
+                    <img src="./src/image/projeto-listagem-pokemon.png" alt="Projeto landing page Pokémon">
+                    <h3>Projeto 2</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#" target="_blank">
+                    <img src="./src/image/projeto-one-piece.png" alt="Projeto landing page one piece">
+                    <h3>Projeto 3</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#" target="_blank">
+                    <img src="./src/image/projeto-x-men.png" alt="Projeto landing page X-men">
+                    <h3>Projeto 4</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver Projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/515x700" alt="Capa do projeto">
+                    <h3>Projeto 5</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver Projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/515x700" alt="Capa do projeto">
+                    <h3>Projeto 6</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver Projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/515x700" alt="Capa do projeto">
+                    <h3>Projeto 7</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver Projeto</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/515x700" alt="Capa do projeto">
+                    <h3>Projeto 8</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                        <p>Ver Projeto</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="btn-mostrar-projetos">Mostrar mais</button>
+    </section>
+
+    <script src="./src/js/index.js"></script>
+
+</body>
+
+</html>
+
+
+<!--href destino do link/ tittle nome que aparece ao colocar o mouse em cima/ target _blank pra abrir em outra aba/ i class para dar classe ao icone/ fab fa-nomedamarca estrutura padrão para se usar icone das marcas-->
